@@ -1,0 +1,218 @@
+let navbar = document.querySelector('.navbar')
+
+document.querySelector('#home').onclick = () =>{
+    navbar.classList.toggle('active');
+}
+
+document.querySelector('#close').onclick = () =>{
+    navbar.classList.remove('active');
+}
+
+window.onscroll = () =>{
+
+    navbar.classList.remove('active');
+
+    if(window.scrollY > 100){
+        document.querySelector('header').classList.add('active');
+    }else{
+        document.querySelector('header').classList.remove('active');
+    }
+}
+
+let themeToggler = document.querySelector('#theme-toggler');
+
+themeToggler.onclick = () =>{
+    themeToggler.classList.toggle('fa-sun');
+    if(themeToggler.classList.contains('fa-sun')){
+        document.querySelector('body').classList.add('active');
+    }else{
+        document.querySelector('body').classList.remove('active');
+    }
+}
+
+document.querySelectorAll('.small-image-1').forEach(images =>{
+    images.onclick = () =>{
+        document.querySelector('.big-image-1').src = images.getAttribute('src');
+    }
+});
+
+document.querySelectorAll('.small-image-2').forEach(images =>{
+    images.onclick = () =>{
+        document.querySelector('.big-image-2').src = images.getAttribute('src');
+    }
+});
+
+document.querySelectorAll('.small-image-3').forEach(images =>{
+    images.onclick = () =>{
+        document.querySelector('.big-image-3').src = images.getAttribute('src');
+    }
+});
+
+let countDate = new Date('aug 1, 2021 00:00:00').getTime();
+
+function countDown(){
+
+    let now = new Date().getTime();
+	gap = countDate - now;
+
+    let seconds = 1000;
+    let minutes = seconds * 60;
+    let hours = minutes * 60;
+    let days = hours * 24;
+
+    let d = Math.floor(gap / (days));
+	let h = Math.floor((gap % (days)) / (hours));
+	let m = Math.floor((gap % (hours)) / (minutes));
+	let s = Math.floor((gap % (minutes)) / (seconds));
+
+    document.getElementById('days').innerText = d;
+    document.getElementById('hours').innerText = h;
+    document.getElementById('minutes').innerText = m;
+    document.getElementById('seconds').innerText = s;
+
+}
+
+setInterval(function(){
+    countDown()
+},1000);
+
+var swiper = new Swiper(".product-slider", {
+    slidesPerView: 3,
+    loop:true,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        800: {
+          slidesPerView: 3,
+        },
+        1000: {
+            slidesPerView: 3,
+        },
+    },
+});
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var swiper = new Swiper(".review-slider", {
+    slidesPerView: 3,
+    loop:true,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        800: {
+          slidesPerView: 3,
+        },
+        1000: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
+
+const leftButtons = document.getElementsByClassName('left_button');
+const rightButtons = document.getElementsByClassName('right_button');
+
+for (var i = 0; i < leftButtons.length; i++) { //infinite loop 
+  buttonL = leftButtons[i];
+  buttonL.addEventListener('click', scrollProductsLeft);
+}
+
+for (var j = 0; j < rightButtons.length; j++) { //infinite loop 
+  buttonR = rightButtons[j];
+  buttonR.addEventListener('click', scrollProductsRight);
+}
+
+function scrollProductsLeft(event) {
+    buttonL = event.target;
+    console.log("hello");
+    alert('helloL');
+    var cover = buttonL.parentElement;
+    var element = cover.querySelector('.box-container');
+    /*const element = document.getElementById('box-container');*/
+    element.scrollLeft = element.scrollLeft - 600;
+}
+function scrollProductsRight(event) {
+  console.log("helloR");  
+  alert('helloR');
+    buttonR = event.target;
+    var cover = buttonR.parentElement;
+    var element = cover.querySelector('.box-container');
+    /*const element = document.('box-container');*/
+    element.scrollLeft = element.scrollLeft + 600;
+}
+
+
+/*function addToCartClicked (event) {
+  button = event.target;
+  var cartItem = ((button.parentElement).parentElement).parentElement;
+  var price = cartItem.getElementsByClassName('price')[0].innerText;
+  var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
+  addItemToCart (price, imageSrc);
+  updateCartPrice();
+}*/
+
+
+/*function scrollProductsLeftM() {
+    const element = document.getElementById('box-containerM');
+    element.scrollLeft = element.scrollLeft - 600;
+}
+function scrollProductsRightM() {
+    const element = document.getElementById('box-containerM');
+    element.scrollLeft = element.scrollLeft + 600;
+}
+
+function scrollProductsLeftW() {
+    const element = document.getElementById('box-containerW');
+    element.scrollLeft = element.scrollLeft - 600;
+}
+function scrollProductsRightW() {
+    const element = document.getElementById('box-containerW');
+    element.scrollLeft = element.scrollLeft + 600;
+}
+
+function scrollProductsLeftC() {
+    const element = document.getElementById('box-containerC');
+    element.scrollLeft = element.scrollLeft - 600;
+}
+function scrollProductsRightC() {
+    const element = document.getElementById('box-containerC');
+    element.scrollLeft = element.scrollLeft + 600;
+}
+
+function scrollProductsLeftO() {
+    const element = document.getElementById('box-containerO');
+    element.scrollLeft = element.scrollLeft - 600;
+}
+function scrollProductsRightO() {
+    const element = document.getElementById('box-containerO');
+    element.scrollLeft = element.scrollLeft + 600;
+}
+*/

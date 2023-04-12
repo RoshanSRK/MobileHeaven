@@ -1,0 +1,190 @@
+
+
+.heading{
+  margin-top: 100px;    
+}
+
+
+
+.prod{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+    height:60%;
+}
+
+/* media queries  */
+.slider {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+       margin-top:auto;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        overflow: hidden;
+        float: left;
+        border-radius: 2em;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -600px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: var(--purple);
+      }
+      .buttons a:target,.buttons a:hover {
+       background-color: var(--deep-purple);
+      }
+      
+ .container-details{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  margin-right: auto;
+  display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.knowMore {
+     margin-top: 1rem;
+     padding-top: 0;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 16px;
+     margin-right: auto;
+     display:flex;
+     flex-wrap:wrap;
+     justify-content: flex-start;
+     flex-direction: column;
+     text-align: center;
+     color: white;
+     background:radial-gradient(circle, rgba(0,0,0,1) 0%, var(--purple) 47%, rgba(0,0,0,1) 100%);
+     border-radius:2rem;
+     height:auto;
+}
+.knowMore p{
+    line-height: 2.4;
+}
+.knowMore h2{
+ font-size: 35px;
+ border: solid 2px  white;
+ border-radius: 2em;
+ margin: 10px;
+}
+.knowMore h2,
+.container-details h1,
+.container-details h1 p,
+.container-details span{
+    padding: 10px 0px;
+}
+ .adddcartbutton {
+  background-color: #FFA500;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height:0px;
+  width:175px;
+}
+
+.addcart {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #FFA500;
+  
+}
+
+.container-details .cart-btn{
+     padding: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid var(--deep-purple);
+    margin-bottom: 15px;
+    border-radius:5em;
+}
+
+.container-details .cart-btn:hover{
+ background-color: var(--deep-purple);
+    color: white;
+
+}
+
+.addcart:hover {
+  background-color: #FFA500;
+  color: white;
+}
+/*
+
+
+/* Add some padding and a grey background color to containers */
+
+.table-container{
+  margin-top: 200px;
+  margin-left: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+table{
+  width : 75%;
+}
+
+td:nth-child(even),td:nth-child(even) {
+  color: #FFA500;
+}
+tr{
+  height:35px;
+}
+
+
+@media (max-width:991px){
+ .prod{
+  height:100vh;
+  height: 100svh;
+ }
+ 
+ .knowMore h2{
+  margin-top: 100px;
+ }
+}
+
