@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Heaven</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+      <header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+   <div class="icons">
+    <a href="index.html.html" class="	fas fa-arrow-left" id="back"> </a>
+   </div>
+    <a href="#" class="logo">Mobile Heaven<span></span></a>
+    <nav class="navbar">
+        <a href="#mobile">Mobile Phones</a>
+        <a href="#wearables">Wearables</a>
+        <a href="#chargers">Chargers</a>
+        <a href="#other">Other Accessories</a>
+    </nav>
+
+    <div class="icons">
+         <a href="#" class="fas fa-heart" id="wishlist"><span class ="wishlist-quantity">0</span></a>
+        <a href="#" class="fas fa-shopping-cart" id="toggle-cart"><span class ="cart-quantity">0</span></a>  
+        <div class = "dropdown">                                <!--------------------------------> 
+        <a href="#" class="fas fa-user"></a>
+            <div class = "dropdown-content">
+              <a href = "login.php">Login</a>
+              <a href = "register.php">Register</a>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- header section ends -->
+ <!-- Cart Modal-->
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      <h1 class="basket">Basket</h1>
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">Rs 0</span>
+              <button class="purchase-btn">CHECKOUT</button>
+        </div>
+      </div>
+</div>
+<!--   end of cart modal -->
+
+ <!-- Wishlist Modal-->
+<div class="wishlist-modal-overlay">
+    <div class="wishlist-modal">
+      <i id="close-btnW" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+        <h1 class="basket">Wishlist</h1>
+        <div class="productW-rows"> </div>    
+    </div>
+</div>
+<!--   end of wishlist modal -->
+      <section class="products" class = "mobile" id = "mobile" id="products">   
+       <h1 class="heading3"> Mobile <span>Phones</span> </h1>
+       <div class="box-container">
+       <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/samsungS23/SM1-S918BZKCAFA-1.png" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Samsung Galaxy S23 Ultra</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 67990</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/samsungA23/SM1-A235FZOVAFA.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Samsung Galaxy A23 </h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 11990
+</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/samsungFlip/SM1-F721BLVEAFA.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Samsung Galaxy ZFLIP 4</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 52990</span>
+            </div>
+        </div>
+        
+         <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/huaweiNova10/NOVA110-BLK.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Huawei Nova 10 256GB </h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 25990</span>
+            </div>
+        </div>
+         
+          <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/huaweiP50/P50POCKETPE1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Huawei P50 Pocket PE</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 52990</span>
+            </div>
+        </div>
+          
+           <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages\huaweiY61\NOVA1Y61-GRN.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Huawei Nova Y61</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 74990</span>
+            </div>
+        </div>
+           
+             <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/iphone14/IPHONE14512-STAR1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple IPHONE 14 512GB STAR</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 72990</span>
+            </div>
+        </div>
+             
+               <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/iphone13pro/IPHONE13-PM-128-GRN - 1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple IPHONE13 PRO MAX 128GB</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 69990</span>
+            </div>
+        </div>
+               
+                 <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/iphoneSE/IPHONESE256-MID-1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple IPHONE SE 256GB</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 35990</span>
+            </div>
+        </div>
+      </section>
+        
+    <section class="products"class = "wearables" id = "wearables" id="products">
+    <h1 class="heading">Wear<span>Ables</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/AirpodsPro/AIRPODSPRO-SC1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple Wireless Earphones Airpods PRO</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 15490</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/belkinearphone/AUC002GLBK1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Belkin Wireless Earphones Black</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 4590</span>
+            </div>
+        </div>
+
+       <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/jblearphone/JBLLIVE300TWSBLU1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>JBL Wireless Earphones Blue</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 4990</span>
+            </div>
+        </div>
+       
+       <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/havitheadphonepink/H2233D-PINK1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>HAVIT Gaming Headphones</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 1290</span>
+            </div>
+        </div>
+       
+       <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/AirpodsPro/AIRPODSPRO-SC1.jpg" alt="">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <!-- <a href="#" class="cart-btn">add to cart</a> -->
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple Wireless Earphones Airpods PRO</h3>
+                <!--<div class="price"> Rs2500 </div>-->
+                <span class="price"> Rs 15490</span>
+            </div>
+        </div>
+       
+       <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/AirpodsPro/AIRPODSPRO-SC1.jpg" alt="">
+                <div class="icons">
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple Wireless Earphones Airpods PRO</h3>
+                <span class="price"> Rs 15490</span>
+            </div>
+        </div>
+
+</section>
+         
+          <section class="products" class = "chargers" id = "chargers" id ="products">
+
+    <h1 class="heading">Chargers <span></span> </h1>
+  
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/AirpodsPro/AIRPODSPRO-SC1.jpg" alt="">
+                <div class="icons">
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple Wireless Earphones Airpods PRO</h3>
+                <span class="price"> Rs 15490</span>
+            </div>
+        </div>
+
+         <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/AirpodsPro/AIRPODSPRO-SC1.jpg" alt="">
+                <div class="icons">
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple Wireless Earphones Airpods PRO</h3>
+                <span class="price"> Rs 15490</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img class="product-image" src="productimages/AirpodsPro/AIRPODSPRO-SC1.jpg" alt="">
+                <div class="icons">
+                    <button class="heart-btn fas fa-heart" ></button>
+                    <button class="cart-btn"> Add to cart </button>
+                    <a href="#" class="fas fa-angle-double-right"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Apple Wireless Earphones Airpods PRO</h3>
+                <span class="price"> Rs 15490</span>
+            </div>
+        </div>
+
+</section>
+          
+    <section class="products" class = "other" id = "other" id="products">
+
+    <h1 class="heading"> Other <span>Accessories</span> </h1>
+  
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/powerbank.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>PowerBank</h3>
+                <div class="price"> Rs2390 <span>Rs2500</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/ring.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Ring Stand Holder</h3>
+                <div class="price"> Rs90 <span>Rs195</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/screenpro.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Screen Protector</h3>
+                <div class="price"> Rs450 <span>Rs590</span> </div>
+            </div>
+        </div>
+
+</section>
+             
+<!-- footer section starts  -->
+
+    
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">example@gmail.com</a>
+            <a href="#">mumbai, india - 400104</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> macadam </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+        
+       <script src="./js/shoppingcart.js"></script>
+  <script src="./js/script.js"></script> 
+
+       
+       
+    </body>
+    
+    

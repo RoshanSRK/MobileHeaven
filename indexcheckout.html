@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout Form</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="checkout.js"></script>
+   <link rel="stylesheet" href="css/checkoutstyle.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<header id="headerC">
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+   <div class="icons">
+    <a href="home.html" class="	fas fa-arrow-left" id="back"> </a>
+   </div>
+    <a href="#" class="logo" >Mobile Heaven<span></span></a>
+</header>
+<body>
+	<div class="container">
+		<form id="checkout-form">
+			<div class="row"><div class="col"><div class="title">Shipping Information</div><div class="inputBox">
+					<span>Full Name</span>
+					<input type="text" name="name" required>
+					</div><div class="inputBox"><span>Email Address</span><input type="email" name="email" required></div>
+					<div class="inputBox"><span>Address</span><input type="text" name="address" required></div>
+					<div class="flex"><div class="inputBox" style="flex:2"><span>City</span><input type="text" name="city" required></div>
+					<div class="inputBox" style="flex:1"><span>Country</span><input type="text" name="country" required></div>
+					<div class="inputBox" style="flex:1"><span>Zip Code</span><input type="text" name="zip" required></div></div></div>
+				<div class="col"><div class="title">Payment Information</div><div class="inputBox"><span>Cards Accepted :</span>
+				   <img src="images/card_img.png" alt=""></div>
+               <div class="inputBox"><span>Cardholder Name</span><input type="text" name="cardName" required></div>
+					<div class="inputBox"><span>Card Number</span><input type="text" name="cardNumber" required></div>
+					<div class="flex"><div class="inputBox" style="flex:1"><span>Exp Month</span><input type="text" name="expMonth" required></div>
+				   <div class="inputBox" style="flex:1"><span>Exp Year</span><input type="text" name="expYear" required></div>
+					<div class="inputBox" style="flex:1"><span>CVV</span><input type="text" name="cvv" required></div>
+					</div> </div></div><button type="submit" class="submit-btn">Submit</button>
+	   </form>
+	<div id="result"></div>
+</body>
+</html>

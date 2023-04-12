@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<title>Welcome!</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><div id="close_box">&times;</div></a>
+			<a href="#home" onclick="closeNav()">Home</a>
+			<a href="#about_us" onclick="closeNav()">About</a>
+			<a href="ProductsPage.php" onclick="closeNav()">Products</a>
+			<a href="#forms" onclick="closeNav()">Contact</a>
+			<a href="#forms" onclick="closeNav()">Newsletter</a>
+			<a href="#">Wishlist</a>
+			<a href="#">Shopping Cart</a>
+			<a href="login.php">Login</a>
+			<a href="register.php">Register</a>
+		</div>
+		<div id="top_section">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()" id= "open_text">&#9776;</span>
+		</div>
+		
+		<main id="homepage">
+			<section class="center" id="home">
+			
+				<div class= "center" id="flex-container">
+					<div class = "web_name">
+						<h1 class= "white">Mobile Heaven</h1>
+					</div>
+					<div class="web_name">
+						<h2 class = "white">You want it, we have it<span>.</span></h2>
+					</div>
+					
+					<div class ="center" id="icons">
+						<div class="icon">
+							<a href="ProductsPage.php">
+								<img class = "imgicons"src="images\logos\product.png">
+								<div class="overlay">
+									<div class="text">Products</div>
+								</div>
+							</a>
+						</div>
+						<div class="icon">
+							<a href="contact.html">
+								<img class = "imgicons"src="images\logos\wishlist.jpeg">
+								<div class="overlay">
+									<div class="text">Wishlist</div>
+								</div>
+							</a>
+						</div>
+						<div class="icon">
+							<!--<a href="login.html">
+								<img class = "imgicons"src="images\logos\account.png">
+								<div class="overlay">
+									<div class="text">Login</div>
+								</div>
+							</a>-->
+							
+								<div class = "dropdown">                                <!--------------------------------> 
+										<img class = "imgicons"src="images\logos\account.png">
+										<div class = "dropdown-content">
+										  <a href = "login.php">Login</a>
+										  <a href = "register.php">Register</a>
+										</div>
+								</div>
+							
+						</div>
+						<div class="icon">
+							<a href="">
+								<img class = "imgicons"src="images\logos\shopping-cart.png">
+								<div class="overlay">
+									<div class="text">Cart</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>	
+				
+			<section class = "center" id="about_us" >
+					<div>
+					<h1 class="hover-underline-animation"  id="about_us_text">About Us</h1>
+					</div>
+					
+					<div class="team_container">
+						<div class="our-team">
+							<div class="picture">
+							  <img class="img-fluid" src="images/roshan.png">
+							</div>
+						<div class="team-content">
+						  <h3 class="name">Roshan Kokil</h3>
+						  <h4 class="title">Web Developer</h4>
+						  <h4 class="studentID">ID: 2111113</h4>
+						</div>
+						<ul class="social">
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="false"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+						</ul>
+					  </div>
+						
+						<div class="our-team">
+							<div class="picture">
+							  <img class="img-fluid" src="images/zohra.png">
+							</div>
+						<div class="team-content">
+						  <h3 class="name">Zohra Magho</h3>
+						  <h4 class="title">Web Developer</h4>
+						  <h4 class="studentID">ID: 2111914</h4>
+						</div>
+						<ul class="social">
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+						</ul>
+					  </div>
+						
+						<div class="our-team">
+							<div class="picture">
+							  <img class="img-fluid" src="images/sarah.png">
+							</div>
+						<div class="team-content">
+						  <h3 class="name">Anne Sarah Sadien</h3>
+						  <h4 class="title">Web Developer</h4>
+						  <h4 class="studentID">ID: 2110188</h4>
+						</div>
+						<ul class="social">
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+						</ul>
+					  </div>
+						
+						<div class="our-team">
+							<div class="picture">
+							  <img class="img-fluid" src="images/ashfaaq.png">
+							</div>
+						<div class="team-content">
+						  <h3 class="name">Ashfaaq Eathally</h3>
+						  <h4 class="title">Web Developer</h4>
+						  <h4 class="studentID">ID: 2111078</h4>
+						</div>
+						<ul class="social">
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+						</ul>
+					  </div>
+						
+						<div class="our-team">
+							<div class="picture">
+							  <img class="img-fluid" src="images/alisha.png">
+							</div>
+						<div class="team-content">
+						  <h3 class="name">Alisha Curpen</h3>
+						  <h4 class="title">Web Developer</h4>
+						  <h4 class="studentID">ID: 2119024</h4>
+						</div>
+						<ul class="social">
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+						</ul>
+					  </div>
+					</div>
+			</section>
+			
+			<section class= "newsletter_contact center " id="forms">
+				<div class="rounded_corners" id="contact_us">
+					<div class ="container center">
+							<h2>Contact us</h2>
+					</div>
+					<form action = "contact.php" method="POST">
+						<input type="text" placeholder="Name" class="box" name="userName" required>
+						<input type="email" placeholder="Email" class="box no_capitalise" name= "userEmail" required>
+						<input type="tel" placeholder="Phone Number" class="box" name="userNumber" pattern="5[0-9]{7}" required>
+						<textarea name="" class="box" placeholder="Message" id="contact_message" cols="20" rows="10" required></textarea>
+						<input type="submit" value="send message" name= "userMessage" class="btn">
+					</form>
+
+				</div>
+				
+				<div class="rounded_corners" id="newsletter">
+					<div class ="container center">
+							<h2>Subscribe to our Newsletter</h2>
+					</div>
+					<form action="newsletter.php" method= "POST">
+						<input type="text" placeholder="Name" name="nameN"  class="box"required>
+						<input type="text" placeholder="Email address" name="emailN" class="box no_capitalise" required>
+						<label>
+							<input type="checkbox" checked="checked" name="subscribe">  Daily Newsletter
+						</label>
+							
+						<input type="submit" value="Subscribe" class="btn">
+						
+
+					</form>
+				</div>
+				
+				
+				
+			</section>
+			
+			
+			
+			
+			<section class="footer">
+			
+				<div class="box-container">
+			
+					<div class="box">
+						<h3>Quick links</h3>
+						<a href="#home">Home</a>
+						<a href="#about_us">About</a>
+						<a href="ProductsPage.php">Products</a>
+						<a href="#forms">Contact</a>
+					</div>
+			
+			
+					<div class="box">
+						<h3>Contact info</h3>
+						<a href="#">+123-456-7890</a>
+						<a href="#" class="no_capitalise">mobileheaven@gmail.com</a>
+						<a href="#">Port-Louis, Mauritius - 400104</a>
+						<img src="images/payment.png" alt="">
+					</div>
+			
+				</div>
+				<div class="credit"> <hr>created by <span> macadam </span> | all rights reserved </div>
+			
+			</section>
+		</main>
+	
+
+
+	<script>
+		
+		
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		  document.getElementById("homepage").style.marginLeft = "250px";
+		  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+		
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("homepage").style.marginLeft= "0";
+		  document.body.style.backgroundColor = "white";
+		}
+		
+		
+		
+		
+
+
+	</script>
+	
+	
+
+	
+	</body>
+	
+	
+	
+</html>
