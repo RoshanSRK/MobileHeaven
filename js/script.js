@@ -150,24 +150,24 @@ for (var j = 0; j < rightButtons.length; j++) { //infinite loop
   buttonR.addEventListener('click', scrollProductsRight);
 }
 
-function scrollProductsLeft(event) {
-    buttonL = event.target;
-    console.log("hello");
-    alert('helloL');
-    var cover = buttonL.parentElement;
-    var element = cover.querySelector('.box-container');
-    /*const element = document.getElementById('box-container');*/
-    element.scrollLeft = element.scrollLeft - 600;
-}
-function scrollProductsRight(event) {
-  console.log("helloR");  
-  alert('helloR');
-    buttonR = event.target;
-    var cover = buttonR.parentElement;
-    var element = cover.querySelector('.box-container');
-    /*const element = document.('box-container');*/
-    element.scrollLeft = element.scrollLeft + 600;
-}
+// function scrollProductsLeft(event) {
+//     buttonL = event.target;
+//     console.log("hello");
+//     alert('helloL');
+//     var cover = buttonL.parentElement;
+//     var element = cover.querySelector('.box-container');
+//     /*const element = document.getElementById('box-container');*/
+//     element.scrollLeft = element.scrollLeft - 600;
+// }
+// function scrollProductsRight(event) {
+//   console.log("helloR");  
+//   alert('helloR');
+//     buttonR = event.target;
+//     var cover = buttonR.parentElement;
+//     var element = cover.querySelector('.box-container');
+//     /*const element = document.('box-container');*/
+//     element.scrollLeft = element.scrollLeft + 600;
+// }
 
 
 /*function addToCartClicked (event) {
@@ -180,7 +180,7 @@ function scrollProductsRight(event) {
 }*/
 
 
-/*function scrollProductsLeftM() {
+function scrollProductsLeftM() {
     const element = document.getElementById('box-containerM');
     element.scrollLeft = element.scrollLeft - 600;
 }
@@ -188,7 +188,7 @@ function scrollProductsRightM() {
     const element = document.getElementById('box-containerM');
     element.scrollLeft = element.scrollLeft + 600;
 }
-
+/*
 function scrollProductsLeftW() {
     const element = document.getElementById('box-containerW');
     element.scrollLeft = element.scrollLeft - 600;
