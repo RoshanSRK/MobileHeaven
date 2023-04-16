@@ -239,8 +239,9 @@
 </section>
 
 <!-- footer section ends -->
-        
+    
        <script src="./js/shopcart.js"></script>
+       <script async="false" src="./js/scrollcontainer.js"></script>
   <script src="./js/script.js"></script> 
 
     </body>

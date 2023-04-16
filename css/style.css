@@ -44,6 +44,10 @@ padding-top:7rem;
         padding-top:7rem;
 }
 
+button {
+    cursor: pointer;
+}
+
 .heading{
     text-align: center;
     font-size: 4rem;
@@ -270,6 +274,8 @@ header .fa-bars{
     /*display: flex;
     flex-wrap: wrap;
     gap:1.5rem;*/
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: grid;
     overflow: auto;
     grid-gap: 1em;
@@ -301,7 +307,7 @@ header .fa-bars{
 
 .products .box-container .box:hover{
   transform: translateY(-1.5rem);
-  z-index=100;
+  /* z-index: 100; */
   box-shadow: 0px 10px var(--deep-purple);
 }
 /*.products .box-container .box .image{
@@ -315,12 +321,12 @@ header .fa-bars{
 .products .box-container .box .image{
     position: relative;
     text-align: center;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     border-radius: 5rem;
     overflow:hidden;
 }
 
-products .box-container .box .image img{
+.products .box-container .box .image img{
     height:25rem;
 }
 
@@ -406,6 +412,7 @@ products .box-container .box .image img{
 }
 
 .cover button{
+    cursor: pointer;
     margin:0;
 }
 .right_button{
@@ -904,6 +911,10 @@ span.psw {
 ::-webkit-scrollbar {
   width: 2em;
   height: 1em;
+}
+
+.box-container::-webkit-scrollbar {
+    height: 0;
 }
 
 

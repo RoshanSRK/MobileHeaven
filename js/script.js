@@ -137,82 +137,33 @@ var swiper = new Swiper(".review-slider", {
 
 
 
-const leftButtons = document.getElementsByClassName('left_button');
-const rightButtons = document.getElementsByClassName('right_button');
+const leftButtons = document.querySelectorAll('.left_button');
+const rightButtons = document.querySelectorAll('.right_button');
 
-for (var i = 0; i < leftButtons.length; i++) { //infinite loop 
-  buttonL = leftButtons[i];
-  buttonL.addEventListener('click', scrollProductsLeft);
-}
+rightButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      //const direction = btn.dataset.direction;
+      console.log('right button pressed');
+      const container = btn.closest('.box-container');
+  
+    //   if (direction === 'right') {
+        container.scrollLeft += 600; // change the value as needed to adjust the amount of scrolling
+    //   } else if (direction === 'down') {
+    //     container.scrollTop += 100; // change the value as needed to adjust the amount of scrolling
+    //   }
+     });
+  });
 
-for (var j = 0; j < rightButtons.length; j++) { //infinite loop 
-  buttonR = rightButtons[j];
-  buttonR.addEventListener('click', scrollProductsRight);
-}
-
-// function scrollProductsLeft(event) {
-//     buttonL = event.target;
-//     console.log("hello");
-//     alert('helloL');
-//     var cover = buttonL.parentElement;
-//     var element = cover.querySelector('.box-container');
-//     /*const element = document.getElementById('box-container');*/
-//     element.scrollLeft = element.scrollLeft - 600;
-// }
-// function scrollProductsRight(event) {
-//   console.log("helloR");  
-//   alert('helloR');
-//     buttonR = event.target;
-//     var cover = buttonR.parentElement;
-//     var element = cover.querySelector('.box-container');
-//     /*const element = document.('box-container');*/
-//     element.scrollLeft = element.scrollLeft + 600;
-// }
-
-
-/*function addToCartClicked (event) {
-  button = event.target;
-  var cartItem = ((button.parentElement).parentElement).parentElement;
-  var price = cartItem.getElementsByClassName('price')[0].innerText;
-  var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
-  addItemToCart (price, imageSrc);
-  updateCartPrice();
-}*/
-
-
-function scrollProductsLeftM() {
-    const element = document.getElementById('box-containerM');
-    element.scrollLeft = element.scrollLeft - 600;
-}
-function scrollProductsRightM() {
-    const element = document.getElementById('box-containerM');
-    element.scrollLeft = element.scrollLeft + 600;
-}
-/*
-function scrollProductsLeftW() {
-    const element = document.getElementById('box-containerW');
-    element.scrollLeft = element.scrollLeft - 600;
-}
-function scrollProductsRightW() {
-    const element = document.getElementById('box-containerW');
-    element.scrollLeft = element.scrollLeft + 600;
-}
-
-function scrollProductsLeftC() {
-    const element = document.getElementById('box-containerC');
-    element.scrollLeft = element.scrollLeft - 600;
-}
-function scrollProductsRightC() {
-    const element = document.getElementById('box-containerC');
-    element.scrollLeft = element.scrollLeft + 600;
-}
-
-function scrollProductsLeftO() {
-    const element = document.getElementById('box-containerO');
-    element.scrollLeft = element.scrollLeft - 600;
-}
-function scrollProductsRightO() {
-    const element = document.getElementById('box-containerO');
-    element.scrollLeft = element.scrollLeft + 600;
-}
-*/
+  leftButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      //const direction = btn.dataset.direction;
+      console.log('left button pressed');
+      const container = btn.closest('.box-container');
+  
+    //   if (direction === 'right') {
+        container.scrollLeft -= 600; // change the value as needed to adjust the amount of scrolling
+    //   } else if (direction === 'down') {
+    //     container.scrollTop += 100; // change the value as needed to adjust the amount of scrolling
+    //   }
+     });
+  });
